@@ -1,13 +1,118 @@
-<!DOCTYPE html><!-- declara que tipo de archivo es un html -->
-</head>
+<!DOCTYPE html>
 <html lang="es"><!-- contiene todo el html, todas las etiquetas van dentro de esta -->
 <head>
     <meta charset="UTF-8"><!-- contiene los metadatos del html -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- cambia la escala de la pagina a difrentes dispositivos -->
     <title>Mi primera pagina</title>
+</head>
+
 <body><!-- contenido de la pagina -->
-    <h1>Mi primera pagina web
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet officia tempore repudiandae numquam ad quae rem dicta, fugit alias magni dolorem veniam nesciunt labore aut non voluptas sunt! Possimus, animi?</p>
-</body>
-</h1>
+    <header>
+        <!-- cabecera -->       
+    </header>
+    <nav>
+        <!-- navegacion entre paginas -->
+    </nav>
+    <main><!-- Contenido -->
+        <h1>Mi pagina web</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet officia tempore repudiandae numquam ad quae rem dicta, fugit alias magni dolorem veniam nesciunt labore aut non voluptas sunt! Possimus, animi?</p>
+        <input type="texto">
+        <input type="password">
+        <input type="email">
+        <input type="number">
+        <input type="tel"><br>
+        <input type="date">
+        <input type="color">         
+        <input type="checkbox">
+        <input type="radio">
+        <input type="range">
+        <input type="file">
+        <input type="submit">
+        <br>
+        <hr>
+        <label>Formulario</label>
+
+        <!-- Enviamos los datos ocultos por POST al servidor imaginario /registro --> 
+        <form action="/registro" method="POST"> 
+        <!-- El atributo 'for' debe ser IDÉNTICO al 'id' del input para vincularlos --> 
+        <label for="nombre_usuario">Nombre Completo:</label> 
+        <input type="text" id="nombre_usuario" name="nombre_real" 
+        placeholder="Ej: Juan Perez" required><br> 
+        <label for="clave">Crea una Contraseña:</label> 
+        <input type="password" id="clave" name="password_secreta" required><br> 
+        <label for="correo">Tu E-mail de contacto:</label> 
+        <input type="email" id="correo" name="email_contacto">
+
+
+        <br>
+        <hr>
+        <label>Uso de Radio/id(imput)/for(label)</label>
+
+        
+        <fieldset> <!-- Agrupación Semántica de opciones (Radio Buttons) -->
+        <legend>Elige tu Plan de Suscripción</legend> 
+        <!-- Observa que ambos tienen name="plan" para que compitan entre 
+        sí --> 
+        <input type="radio" name="plan" id="basico" value="plan_basico"> 
+        <label for="basico">Plan Básico (Gratis)</label> 
+        <input type="radio" name="plan" id="pro" value="plan_pro"> 
+        <label for="pro">Plan Profesional ($10)</label> 
+        </fieldset> 
+        <button type="submit">Enviar mis datos al Servidor</button> 
+        </form> 
+
+        <video src="videos/lluvia-fondo.mp4" width="100%" autoplay muted loop> 
+            Lo sentimos, tu navegador es muy antiguo y no soporta el tag de video. 
+        </video>    
+
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" 
+        height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <hr>
+
+        <video src="./assets/videos/16634981_640_360_30fps.mp4" autoplay muted controls loop></video>
+        <br>
+        <audio src="./assets/audios/oliviaaydin-birds-singing-audio-tune-165801.mp3" autoplay muted controls loop></audio>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1823030.0982077224!2d-56.17006267718987!3d-26.82068213437738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f811245d4ce333%3A0xfb5d357febb15a1d!2sMisiones!5e0!3m2!1ses-419!2sar!4v1788908353508!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></>"></iframe>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YDL8HbY9ENU?si=gthgvhVR1sbQNy8r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </main>
+    <section></section>
+    <article></article>
+    <aside></aside>
+    
+    <footer> <!-- Pie de pagina -->
+        <nav>
+            <ul>
+                <li>
+                    <span>Products</span>
+                    <ul>
+                        <li><a href="#">Enterprise Server</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Design Systems</a></li>
+                        <li><a href="#">WebContainer Api</a></li>
+                        <li><a href="#">Web Publisher</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Plataform</span>
+                    <ul>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <span>Legal</span>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Acceptable Use Policy</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </footer>    
+git status</body>
 </html>
